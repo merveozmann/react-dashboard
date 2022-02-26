@@ -1,0 +1,108 @@
+.left{
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 68rem 28rem;
+    gap: 1.2rem;
+}
+.features{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+}
+.feature{
+    display: flex;
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadown);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.feature:hover{
+    box-shadow: none;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: grey;
+    margin-top: 1.3rem;
+    padding: 1.3rem;
+    color: white;
+}
+.money{
+    background:var(--color-primary);
+}
+.report{
+    background:var(--color-danger);
+}
+.sales{
+    background:var(--color-success);
+}
+.total{
+    background:var(--color-warning);
+}
+.feature-item{
+    padding: 1rem;
+}
+.text-muted{
+    color: gray;
+}
+.chart-cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+}
+.chart-card{
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadown);
+    padding: 1.2rem;
+}
+.chart-card:hover{
+    box-shadow: none;
+}
+
+.recent-updates h2{
+    margin-bottom: 0.8rem;
+}
+.recent-updates .updates{
+    padding: var(--card-padding);
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadown);
+    transition: all 300ms ease;
+}
+.recent-updates .updates:hover{
+    box-shadow: none;
+}
+ .recent-updates .updates .update{
+    display: grid;
+    grid-template-columns: 2.6rem auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+@media screen and (max-width:1200px){
+    .left{
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: 68rem 28rem;
+
+        gap: 1.2rem;
+    }
+    
+}
+@media screen and (max-width:768px){
+    .left{
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+    .features{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.5rem;
+    }
+}
